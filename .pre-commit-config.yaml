@@ -9,6 +9,7 @@ ci:
 exclude: >
   (?x)^(
     .gitignore|
+    dist/.*|
     node_modules.*
   )$
 repos:
