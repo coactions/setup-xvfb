@@ -17,9 +17,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Fail if npm install reports dirty
+      - name: Fail if rebuilding produce a dirty repo
         run: |
-          npm install --no-bin-links
+          npm install
+          npx ncc build index.js
           if [[ -n $(git status --porcelain) ]]; then
             echo "Repo is dirty";
             git status --porcelain;
