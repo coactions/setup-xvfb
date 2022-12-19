@@ -1,6 +1,9 @@
 ---
 name: prod
-"on": [push]
+"on":
+  push:
+    branches:
+      - main
 
 jobs:
   build:
