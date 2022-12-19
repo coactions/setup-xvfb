@@ -1,5 +1,5 @@
 ---
-name: xvfb
+name: setup-xvfb
 description: "Run your headless tests with XVFB"
 branding:
   icon: monitor
