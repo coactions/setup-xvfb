@@ -2,7 +2,7 @@
 name: xvfb
 description: "Run your headless tests with XVFB"
 branding:
-  icon: airplay
+  icon: monitor
   color: purple
 inputs:
   run:
