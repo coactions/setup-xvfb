@@ -1,5 +1,7 @@
 Basilio
 Brito
+Sbarnea
+Sorin
 autofix
 autoupdate
 codespell
