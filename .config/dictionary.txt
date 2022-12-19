@@ -1,0 +1,12 @@
+Basilio
+Brito
+autofix
+autoupdate
+codespell
+gabrielbb
+headlessly
+pids
+servernum
+ssbarnea
+xrandr
+xvfb
