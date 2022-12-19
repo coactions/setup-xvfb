@@ -1,5 +1,6 @@
+---
 name: prod
-on: [push]
+"on": [push]
 
 jobs:
   build:
