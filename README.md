@@ -17,7 +17,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Run headless test
-        uses: coactions/xvfb@v1
+        uses: coactions/setup-xvfb@v1
         with:
           run: npm test
           working-directory: ./ #optional
