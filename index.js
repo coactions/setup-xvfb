@@ -4,9 +4,8 @@ const exec = require("@actions/exec");
 async function main() {
   try {
     if (process.platform == "linux") {
-      await exec.exec(
-        "sudo apt-get update && sudo apt-get install -y xvfb x11-xserver-utils"
-      );
+      await exec.exec("sudo apt-get update");
+      await exec.exec("sudo apt-get install -y xvfb x11-xserver-utils");
     }
 
     const commands = core.getInput("run", { required: true }).split("\n");
