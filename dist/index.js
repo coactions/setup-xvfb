@@ -3953,6 +3953,7 @@ const exec = __nccwpck_require__(514);
 async function main() {
   try {
     if (process.platform == "linux") {
+      await exec.exec("sudo apt-get update");
       await exec.exec("sudo apt-get install -y xvfb x11-xserver-utils");
     }
 
