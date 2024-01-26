@@ -1,5 +1,5 @@
 {
-  "name": "setup-xvfb",
+  "name": "run-with-xvfb",
   "version": "1.0.0",
   "description": "Run your tests headlessly",
   "main": "index.js",
