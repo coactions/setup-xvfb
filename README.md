@@ -1,6 +1,6 @@
 # XVFB Github Action
 
-This action installs [XVFB](http://elementalselenium.com/tips/38-headless) and runs your headless tests with it. It cleans up the `xvfb` process after your tests are done. If it detects you're __not__ using Ubuntu, your tests still run without `xvfb`, which is very practical for multi-platform workflows.
+This action installs [XVFB](http://elementalselenium.com/tips/38-headless) and runs your headless tests with it. It cleans up the `xvfb` process after your tests are done. If it detects you're **not** using Ubuntu, your tests still run without `xvfb`, which is very practical for multi-platform workflows.
 
 ### Example usage
 
@@ -25,9 +25,10 @@ jobs:
 ```
 
 Modern [GitHub Actions Ubuntu images](https://github.com/actions/runner-images/tree/main/images/ubuntu) now include `xvfb` so this Action could be replaced by:
+
 ```yml
-      - if: startsWith(matrix.os, 'ubuntu')
-        run: xvfb-run npm test
-      - if: "!startsWith(matrix.os, 'ubuntu')"
-        run: npm test
+- if: startsWith(matrix.os, 'ubuntu')
+  run: xvfb-run npm test
+- if: "!startsWith(matrix.os, 'ubuntu')"
+  run: npm test
 ```
