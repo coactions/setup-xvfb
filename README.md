@@ -4,7 +4,7 @@ This action installs [XVFB](http://elementalselenium.com/tips/38-headless) and r
 
 ## Support
 
-- `ubuntu-latest`: Supported, but not required, because the image already [includes xvfb](https://github.com/actions/runner-images/blob/main/images/linux/Ubuntu2204-Readme.md?rgh-link-date=2023-09-07T09%3A28%3A22Z)
+- `ubuntu-latest`: Supported, but not required, because the image already [includes xvfb](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2204-Readme.md?rgh-link-date=2023-11-26T18%3A12%3A25Z)
 - `windows-latest`: Supported
 - `macos-latest`: Supported
 
