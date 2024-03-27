@@ -1,6 +1,6 @@
 # XVFB Github Action
 
-This action installs [XVFB](http://elementalselenium.com/tips/38-headless) and runs your headless tests with it. It cleans up the xvfb process after your tests are done. 
+This action installs [XVFB](http://elementalselenium.com/tips/38-headless) and runs your headless tests with it. It cleans up the xvfb process after your tests are done.
 
 ## Support
 
