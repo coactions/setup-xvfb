@@ -16,7 +16,7 @@ async function main() {
     const directory = core.getInput("working-directory");
     const serverOptions = core.getInput("options");
 
-    for (i in commands) {
+    for (const i in commands) {
       if (process.platform == "linux") {
         console.log("Command: " + commands[i]);
         await runCommandWithXvfb(commands[i], directory, serverOptions);

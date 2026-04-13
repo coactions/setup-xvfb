@@ -30883,7 +30883,7 @@ async function main() {
     const directory = getInput("working-directory");
     const serverOptions = getInput("options");
 
-    for (i in commands) {
+    for (const i in commands) {
       if (process.platform == "linux") {
         console.log("Command: " + commands[i]);
         await runCommandWithXvfb(commands[i], directory, serverOptions);
